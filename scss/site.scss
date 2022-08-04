@@ -1,0 +1,78 @@
+@font-face {
+    font-family: AllerRegular;
+    src: url(/assets/fonts/Aller/Aller_Rg.ttf);
+}
+
+@font-face {
+    font-family: AllerBold;
+    src: url(/assets/fonts/Aller/Aller_Bd.ttf);
+}
+
+@font-face {
+    font-family: AllerBoldItalic;
+    src: url(/assets/fonts/Aller/Aller_BdIt.ttf);
+}
+
+@font-face {
+    font-family: AllerItalic;
+    src: url(/assets/fonts/Aller/Aller_It.ttf);
+}
+
+@font-face {
+    font-family: AllerLight;
+    src: url(/assets/fonts/Aller/Aller_Lt.ttf);
+}
+
+@font-face {
+    font-family: AllerLightItalic;
+    src: url(/assets/fonts/Aller/Aller_LtIt.ttf);
+}
+
+@font-face {
+    font-family: AllerDisplay;
+    src: url(/assets/fonts/Aller/AllerDisplay.ttf);
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.red {
+    color: #FF0000 !important;
+}
+
+.peta40-flex-header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    img {
+        height: 395px;
+    }
+    .peta40logo {
+        height: 370px !important;
+        max-width: 100% !important;
+        
+    }
+    .mobile-star-group {
+        height: 96px;
+        width: auto;
+    }
+}
+
+.party-title {
+    font-family: 'Great Vibes',Arial, Helvetica, sans-serif;
+    color: #D5AA00;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.party-subheading {
+    font-family: AllerBold,Arial, Helvetica, sans-serif;
+    font-size: 3.25rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+    
