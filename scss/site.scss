@@ -45,21 +45,25 @@ body{
     padding: 3rem !important;
 }
 
+.padding-top-1 {
+    padding-top: 1rem !important;
+}
+
 .peta40-flex-header {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-content: center;
     img {
         height: 395px;
     }
     .peta40logo {
-        height: 370px !important;
+        height: 338px;
         max-width: 100% !important;
         
     }
     .mobile-star-group {
-        height: 96px;
-        width: auto;
+        height: auto;
+        width: 96px;
         align-self: center;
     }
 }
@@ -81,23 +85,65 @@ body{
 }
 
 .peta40-info {
+    padding-right: 2rem;
     font-size: 1.2rem;
     p {
         margin-bottom: 1rem;
     }
 }
 
-.more-info-banner{
-    background-color: #F2D049;
-    height: 100px;
-    p {
-        font-family: AllerBoldItalic, Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
-        text-align: center;
+.peta40-btn-list {
+    margin-top: 1rem;
+    float: right;
+}
+
+.peta40-btn-list .button {
+    background-color: #5BA4DC !important;
+    text-align: left !important;
+    height: 48px !important;
+    font-size: 1.1rem !important;
+    font-family: "AllerBold", Arial, Helvetica, sans-serif !important;
+}
+
+.peta40-btn-list .button span {
+    float: right;
+}
+
+@media screen and (max-width: 992px) {
+    .peta40logo {
+        height: 125px !important;
+    }
+
+    main {
+        padding: 2rem !important;
+    }
+    .peta40-btn-list {
+        float: none;
+    }
+
+    .more-info-banner {
+        height: auto !important;
+        padding: 1rem 2rem !important;
     }
 }
 
+.more-info-banner{
+    background-color: #F2D049;
+    height: 100px;
+    font-family: 'AllerBoldItalic', Arial, Helvetica, sans-serif !important;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1rem 6rem;
+}
+
 // Footer
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
 
 .sparkle-bunny-img {
     display: flex;
@@ -108,16 +154,19 @@ body{
 }
 
 .ftr-menu {
-    display: flex;
-    justify-content: space-between;
     padding-left: 0 !important;
     margin-left: 0 !important;
+    margin-top: 1rem !important;
+    a, a:hover {
+        color: #003477 !important;
+    }
 }
 
 .peta-logo-ftr, .fb-logo-ftr, .twitter-logo-ftr {
     height: 22px !important;
     width: auto;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .peta-ftr-contact {
