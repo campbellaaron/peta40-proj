@@ -41,10 +41,14 @@ body{
     color: #FF0000 !important;
 }
 
+.padding-3 {
+    padding: 3rem !important;
+}
+
 .peta40-flex-header {
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     img {
         height: 395px;
     }
@@ -56,6 +60,7 @@ body{
     .mobile-star-group {
         height: 96px;
         width: auto;
+        align-self: center;
     }
 }
 
@@ -67,12 +72,56 @@ body{
 }
 
 .party-subheading {
-    font-family: AllerBold,Arial, Helvetica, sans-serif;
+    font-family: 'AllerDisplay',Arial, Helvetica, sans-serif;
     font-size: 3.25rem;
+    font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 3.12;
 }
 
+.peta40-info {
+    font-size: 1.2rem;
+    p {
+        margin-bottom: 1rem;
+    }
+}
 
+.more-info-banner{
+    background-color: #F2D049;
+    height: 100px;
+    p {
+        font-family: AllerBoldItalic, Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+// Footer
+
+.sparkle-bunny-img {
+    display: flex;
+    justify-self: center;
+    margin: 0 auto !important;
+    width: 645px !important;
+    height: auto;
+}
+
+.ftr-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.peta-logo-ftr, .fb-logo-ftr, .twitter-logo-ftr {
+    height: 22px !important;
+    width: auto;
+    margin-right: 10px;
+}
+
+.peta-ftr-contact {
+    padding-left: 2rem;
+}
 
     
