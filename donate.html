@@ -22,67 +22,69 @@
         <img src="assets/img/stars-for-header-right-edit@2x.png" alt="" class="show-for-large">
     </div>
     </header>
-    <main class="grid-container">
-        <div class="grid-x grid-padding-x">
-            <div class="large-10 padding-4">
-                <h3 class="donation-title">Individual Ticket</h3>
-                <p>An individual ticket grants access to watch PETA’s 40th Anniversary Celebration livestream. Please select the number of individual tickets that you would like to purchase below. All fields with an asterisk (*) are required.</p>
-                <form>
-                    <div class="grid-x grid-padding-x">
-                    <div class="large-12 cell">
-                        <label>Input Label</label>
-                        <input type="text" placeholder="large-12.cell" />
-                    </div>
-                    </div>
-                    <div class="grid-x grid-padding-x">
-                    <div class="large-4 medium-4 cell">
-                        <label>Input Label</label>
-                        <input type="text" placeholder="large-4.cell" />
-                    </div>
-                    <div class="large-4 medium-4 cell">
-                        <label>Input Label</label>
-                        <input type="text" placeholder="large-4.cell" />
-                    </div>
-                    <div class="large-4 medium-4 cell">
-                        <div class="grid-x">
-                        <label>Input Label</label>
-                        <div class="input-group">
-                            <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                            <span class="input-group-label">.com</span>
+    <main class="grid-container-fluid donate-main">
+        <div class="grid-container donate-content">
+            <div class="grid-x grid-padding-x">
+                <div class="large-10 padding-4">
+                    <h3 class="donation-title">Individual Ticket</h3>
+                    <p>An individual ticket grants access to watch PETA’s 40th Anniversary Celebration livestream. Please select the number of individual tickets that you would like to purchase below. All fields with an asterisk (*) are required.</p>
+                    <form>
+                        <div class="grid-x grid-padding-x">
+                        <div class="large-12 cell">
+                            <label>Input Label</label>
+                            <input type="text" placeholder="large-12.cell" />
                         </div>
                         </div>
-                    </div>
-                    </div>
-                    <div class="grid-x grid-padding-x">
-                    <div class="large-12 cell">
-                        <label>Select Box</label>
-                        <select>
-                        <option value="husker">Husker</option>
-                        <option value="starbuck">Starbuck</option>
-                        <option value="hotdog">Hot Dog</option>
-                        <option value="apollo">Apollo</option>
-                        </select>
-                    </div>
-                    </div>
-                    <div class="grid-x grid-padding-x">
-                    <div class="large-6 medium-6 cell">
-                        <label>Choose Your Favorite</label>
-                        <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                        <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-                    </div>
-                    <div class="large-6 medium-6 cell">
-                        <label>Check these out</label>
-                        <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                        <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-                    </div>
-                    </div>
-                    <div class="grid-x grid-padding-x">
-                    <div class="large-12 cell">
-                        <label>Textarea Label</label>
-                        <textarea placeholder="small-12.cell"></textarea>
-                    </div>
-                    </div>
-                </form>
+                        <div class="grid-x grid-padding-x">
+                        <div class="large-4 medium-4 cell">
+                            <label>Input Label</label>
+                            <input type="text" placeholder="large-4.cell" />
+                        </div>
+                        <div class="large-4 medium-4 cell">
+                            <label>Input Label</label>
+                            <input type="text" placeholder="large-4.cell" />
+                        </div>
+                        <div class="large-4 medium-4 cell">
+                            <div class="grid-x">
+                            <label>Input Label</label>
+                            <div class="input-group">
+                                <input type="text" placeholder="small-9.cell" class="input-group-field" />
+                                <span class="input-group-label">.com</span>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                        <div class="large-12 cell">
+                            <label>Select Box</label>
+                            <select>
+                            <option value="husker">Husker</option>
+                            <option value="starbuck">Starbuck</option>
+                            <option value="hotdog">Hot Dog</option>
+                            <option value="apollo">Apollo</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                        <div class="large-6 medium-6 cell">
+                            <label>Choose Your Favorite</label>
+                            <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+                            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+                        </div>
+                        <div class="large-6 medium-6 cell">
+                            <label>Check these out</label>
+                            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                        </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                        <div class="large-12 cell">
+                            <label>Textarea Label</label>
+                            <textarea placeholder="small-12.cell"></textarea>
+                        </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -90,11 +92,12 @@
         <div class="align-center">
             <img src="./assets/img/rabbitstars@2x.png" alt="" class="sparkle-bunny-img">
         </div>
+        <hr class="hr hide-for-large">
         <div class="grid-x grid-padding-x">
             <div class="large-10 medium-10">
             <ul class="menu ftr-menu padding-0 vertical medium-horizontal">
                 <li><a href="#">About PETA</a></li>
-                <li><a href="/donate.html">Donate Now</a></li>
+                <li><a href="./donate.html">Donate Now</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Disclaimer</a></li>
                 <li><a href="#">PETA Websites</a></li>
@@ -102,19 +105,19 @@
             </ul>
             <div class="grid-x grid-padding-x">
                 <div class="large-12 cell">
-                <div class="grid-x grid-padding-x">
-                    <a href=""><img src="./assets/img/peta-logo.png" alt="" class="peta-logo-ftr"></a><a href=""><img src="./assets/img/fb-square.png" alt="" class="fb-logo-ftr"></a><a href=""><img src="./assets/img/twitter-square.png" alt="" class="twitter-logo-ftr"></a>
+                <div class="grid-x grid-padding-x padding-top-1">
+                    <a href=""><img src="./assets/img/peta-logo.png" alt="" class="peta-logo-ftr" style="margin-left: 2rem;"></a><a href=""><img src="./assets/img/fb-square.png" alt="" class="fb-logo-ftr"></a><a href=""><img src="./assets/img/twitter-square.png" alt="" class="twitter-logo-ftr"></a>
                     <div class="large-12 peta-ftr-contact">
-                        <p>People for the Ethical Treatment of Animals<br> 
-                        501 Front St., Norfolk, VA 23510 757-622-PETA (7382) | 757-622-0457 (fax)<br> 
-                        PETA is a nonprofit, tax-exempt 501(c)(3) corporation (tax ID number 52-1218336).</p>
+                    <p>People for the Ethical Treatment of Animals<br> 
+                    501 Front St., Norfolk, VA 23510 757-622-PETA (7382) | 757-622-0457 (fax)<br> 
+                    PETA is a nonprofit, tax-exempt 501(c)(3) corporation (tax ID number 52-1218336).</p>
                     </div>
                 </div>
                 </div>
             </div>
             </div>
         </div>
-    </footer>
+      </footer>
     <script src="assets/js/app.js"></script>
     </body>
 </html>
