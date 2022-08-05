@@ -4,6 +4,40 @@
 @import 'settings';
 @import 'foundation';
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@font-face {
+    font-family: AllerRegular;
+    src: url(../assets/fonts/Aller/Aller_Rg.ttf);
+}
+
+@font-face {
+    font-family: AllerBold;
+    src: url(../assets/fonts/Aller/Aller_Bd.ttf);
+}
+
+@font-face {
+    font-family: AllerBoldItalic;
+    src: url(../assets/fonts/Aller/Aller_BdIt.ttf);
+}
+
+@font-face {
+    font-family: AllerItalic;
+    src: url(../assets/fonts/Aller/Aller_It.ttf);
+}
+
+@font-face {
+    font-family: AllerLight;
+    src: url(../assets/fonts/Aller/Aller_Lt.ttf);
+}
+
+@font-face {
+    font-family: AllerLightItalic;
+    src: url(../assets/fonts/Aller/Aller_LtIt.ttf);
+}
+
+@font-face {
+    font-family: AllerDisplay;
+    src: url(../assets/fonts/Aller/AllerDisplay.ttf);
+}
 
 
 // Global styles

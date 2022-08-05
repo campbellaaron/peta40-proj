@@ -1,40 +1,47 @@
-@font-face {
-    font-family: AllerRegular;
-    src: url(/assets/fonts/Aller/Aller_Rg.ttf);
-}
-
-@font-face {
-    font-family: AllerBold;
-    src: url(/assets/fonts/Aller/Aller_Bd.ttf);
-}
-
-@font-face {
-    font-family: AllerBoldItalic;
-    src: url(/assets/fonts/Aller/Aller_BdIt.ttf);
-}
-
-@font-face {
-    font-family: AllerItalic;
-    src: url(/assets/fonts/Aller/Aller_It.ttf);
-}
-
-@font-face {
-    font-family: AllerLight;
-    src: url(/assets/fonts/Aller/Aller_Lt.ttf);
-}
-
-@font-face {
-    font-family: AllerLightItalic;
-    src: url(/assets/fonts/Aller/Aller_LtIt.ttf);
-}
-
-@font-face {
-    font-family: AllerDisplay;
-    src: url(/assets/fonts/Aller/AllerDisplay.ttf);
-}
-
 body{
     box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-05 {
+    width: 5%;
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.col-10 {
+    width: 10%;
+    float: left;
+    margin-top: 0.8rem;
+}
+
+.col-20 {
+    width: 20%;
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.col-30 {
+    width: 30%;
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.col-40 {
+    width: 40%;
+    float: left;
+    margin-top: 0.8rem;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+    margin-top: 0.8rem;
 }
 
 .red {
@@ -48,6 +55,18 @@ body{
 .padding-top-1 {
     padding-top: 1rem !important;
 }
+
+.padding-horizontal-3 {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
+.spacer-3 {
+    display: block;
+    margin: 3rem 0;
+}
+
+/* Header */
 
 .peta40-flex-header {
     display: flex;
@@ -68,6 +87,9 @@ body{
     width: 96px;
     align-self: center;
 }
+
+/* Main Page */
+
 .home-content, .donate-content {
     background-color: #fff !important;
 }
@@ -82,12 +104,11 @@ body{
 
 .party-subheading {
     position: relative;
-    font-family: "AllerDisplay",Arial, Helvetica, sans-serif;
+    font-family: "AllerBold",Arial, Helvetica, sans-serif;
     font-size: 3.25rem;
-    font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 3.12;
+    letter-spacing: 32;
 }
 
 .peta40-info {
@@ -115,41 +136,95 @@ body{
     float: right;
 }
 
-@media screen and (max-width: 992px) {
-    .peta40logo {
-        height: 125px !important;
-    }
-
-    main {
-        padding: 2rem !important;
-    }
-
-    .party-subheading {
-        font-size: 2.4rem !important;
-    }
-
-    .peta40-btn-list {
-        float: none;
-    }
-
-    .more-info-banner {
-        height: auto !important;
-        padding: 1rem 2rem !important;
-    }
-}
-
 .more-info-banner{
     background-color: #F2D049;
     height: 100px;
     font-family: 'AllerBoldItalic', Arial, Helvetica, sans-serif !important;
-    font-weight: bolder;
-    font-style: italic;
     font-size: 1.3rem;
     text-align: center;
     padding: 1rem 6rem;
 }
 
-// Footer
+/* Donation */
+
+.donate-content {
+    color: #000 !important;
+    font-size: 1.2rem;
+}
+
+.donation-title, .select-subtitle, .donor-contact-info, .payment-info {
+    font-family: "AllerBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #014289 !important;
+}
+
+.donate-form {
+    margin-top: 2rem;
+}
+
+.donate-form label {
+    font-size: 1.2rem !important;
+}
+
+.donate-form input[type=radio] {
+    transform: scale(1.3) !important;
+}
+
+.donate-form input[type=radio]:checked {
+    background-color: #2D9AE3 !important;
+}
+
+.donate-form .moreticketslabel {
+    margin-left: 0.5rem;
+}
+
+.donor-form-label {
+    display: inline-block !important;
+}
+
+.donor-form-input, .donor-form-select {
+    width: 100%;
+    resize: vertical;
+}
+
+.donor-contact-fields, .payment-info-fields {
+    margin-left: 15px !important;
+}
+
+.cc-img {
+    width: 100%;
+    display: inline-block;
+}
+
+.cc-img img {
+    width: 33px !important;
+    height: auto !important;
+    margin-right: 5px;
+}
+
+.cvv-help-icon {
+    display: inline;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.disclaimer-text {
+    font-size: 13px !important;
+    
+}
+
+.submit-btn {
+    background-color: #014289 !important;
+    font-family: "AllerBold",Arial, Helvetica, sans-serif !important;
+    font-size: 1.1rem !important;
+    word-break: keep-all;
+}
+
+
+/* Footer */
 
 footer {
     margin-top: 2rem;
@@ -185,4 +260,54 @@ footer {
     padding-left: 2rem;
 }
 
-    
+@media screen and (min-width: 992px) {
+    .inner-content {
+        padding: 3rem !important;
+    }
+
+    .main {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .peta40logo {
+        height: 125px !important;
+    }
+
+    main {
+        padding: 2rem !important;
+    }
+
+    .party-subheading {
+        font-size: 2.4rem !important;
+        padding: 1rem;
+    }
+
+    .peta40-btn-list {
+        float: none;
+    }
+
+    .more-info-banner {
+        height: auto !important;
+        padding: 1rem 2rem !important;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .col-05, .col-10, .col-20, .col-30, .col-40, .col-50 {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .exp-month, .exp-year {
+        width: 33% !important;
+        margin-right: 0.7rem !important;
+    }
+
+    .expiration {
+        display: inline-flex !important;
+        justify-content: left;
+    }
+}

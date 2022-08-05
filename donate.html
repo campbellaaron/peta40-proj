@@ -17,71 +17,197 @@
     <div class="peta40-flex-header grid-x grid-padding-x">
         <img src="assets/img/stars-for-header-left-edit@2x.png" alt="" class="show-for-large">
         <img src="assets/img/Group1118@2x.png" alt="" class="hide-for-large mobile-star-group">
-        <a href="/"><img src="assets/img/peta40logo@2x.png" alt="" class="peta40logo"></a>
+        <a href="./"><img src="assets/img/peta40logo@2x.png" alt="" class="peta40logo"></a>
         <img src="assets/img/Group1256@2x.png" alt="" class="hide-for-large mobile-star-group">
         <img src="assets/img/stars-for-header-right-edit@2x.png" alt="" class="show-for-large">
     </div>
     </header>
     <main class="grid-container-fluid donate-main">
-        <div class="grid-container donate-content">
+        <div class="grid-container donate-content padding-horizontal-3">
             <div class="grid-x grid-padding-x">
-                <div class="large-10 padding-4">
-                    <h3 class="donation-title">Individual Ticket</h3>
-                    <p>An individual ticket grants access to watch PETA’s 40th Anniversary Celebration livestream. Please select the number of individual tickets that you would like to purchase below. All fields with an asterisk (*) are required.</p>
-                    <form>
+                <div class="large-12 inner-content">
+                    <h2 class="donation-title">Individual Ticket</h2>
+                    <p>An individual ticket grants access to watch PETA’s 40th Anniversary Celebration livestream. Please select the number of individual tickets that you would like to purchase below. All fields with an asterisk (<span class="red">*</span>) are required.</p>
+                    <form class="donate-form">
+                        <h5 class="select-subtitle">Select Number of Tickets <span class="red">*</span></h5>
                         <div class="grid-x grid-padding-x">
-                        <div class="large-12 cell">
-                            <label>Input Label</label>
-                            <input type="text" placeholder="large-12.cell" />
-                        </div>
-                        </div>
-                        <div class="grid-x grid-padding-x">
-                        <div class="large-4 medium-4 cell">
-                            <label>Input Label</label>
-                            <input type="text" placeholder="large-4.cell" />
-                        </div>
-                        <div class="large-4 medium-4 cell">
-                            <label>Input Label</label>
-                            <input type="text" placeholder="large-4.cell" />
-                        </div>
-                        <div class="large-4 medium-4 cell">
-                            <div class="grid-x">
-                            <label>Input Label</label>
-                            <div class="input-group">
-                                <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                                <span class="input-group-label">.com</span>
-                            </div>
+                            <div class="large-12 cell">
+                                <div class="grid-x grid-padding-x">
+                                    <div class="medium-12 cell">
+                                        <input type="radio" name="ticket" value="40" id="forty"><label for="forty">$40 (1 Ticket)</label><br>
+                                        <input type="radio" name="ticket" value="80" id="eighty"><label for="eighty">$80 (2 Tickets)</label><br>
+                                        <input type="radio" name="ticket" value="120" id="onetwenty"><label for="onetwenty">$120 (3 Tickets)</label><br>
+                                        <input type="radio" name="ticket" value="160" id="onesixty"><label for="onesixty">$160 (4 Tickets)</label><br>
+                                        <label for="moreticket"><input type="radio" name="ticket" value="More" id="moreticket">For more than four tickets, please multiply the number of tickets that you would like by $40 and enter the dollar amount below:</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
+                        <div class="spacer-3"></div>
+                        <h5 class="donor-contact-info">Donor Contact Information</h5>
                         <div class="grid-x grid-padding-x">
-                        <div class="large-12 cell">
-                            <label>Select Box</label>
-                            <select>
-                            <option value="husker">Husker</option>
-                            <option value="starbuck">Starbuck</option>
-                            <option value="hotdog">Hot Dog</option>
-                            <option value="apollo">Apollo</option>
-                            </select>
+                            <div class="large-8 cell">
+                                <div class="grid-x grid-padding-x donor-contact-fields">
+                                    <div class="medium-12 row">
+                                        <div class="col-40">
+                                            <label for="firstName" class="donor-form-label">First Name <span class="red">*</span></label>
+                                        </div>
+                                        <div class="col-50">
+                                            <input type="text" id="firstName" placeholder="" class="donor-form-input" required/>
+                                        </div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40">
+                                            <label for="lastName" class="donor-form-label">Last Name <span class="red">*</span></label>
+                                        </div>
+                                        <div class="col-50">
+                                            <input type="text" id="lastName" placeholder="" class="donor-form-input" required/>
+                                        </div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40">
+                                            <label for="email" class="donor-form-label">Email Address <span class="red">*</span></label>
+                                        </div>
+                                        <div class="col-50">
+                                            <input type="email" id="email" placeholder="" class="donor-form-input" required/>
+                                            <p class="help-text" id="emailHelpText">If you donate and have not already registered, you will receive periodic updates and communications.</p>
+                                        </div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40">
+                                            <label for="country" class="donor-form-label">Country/Region <span class="red">*</span></label>
+                                        </div>
+                                        <div class="col-50">
+                                            <select id="country" class="donor-form-select" required>
+                                                <option value="husker">United States</option>
+                                                <option value="starbuck">Canada</option>
+                                                <option value="hotdog">Mexico</option>
+                                                <option value="apollo">Germany</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40">
+                                            <label for="str-add-1" class="donor-form-label">Street Address <span class="red">*</span></label>
+                                        </div>
+                                        <div class="col-50">
+                                            <input type="text" id="str-add-1" placeholder="" class="donor-form-input" required/>
+                                        </div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40">
+                                            <label for="str-add-2" class="donor-form-label">Street Address</label>
+                                        </div>
+                                        <div class="col-50">
+                                            <input type="email" id="str-add-2" placeholder="" class="donor-form-input" required/>
+                                        </div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40">
+                                            <label for="city" class="donor-form-label">City <span class="red">*</span></label>
+                                        </div>
+                                        <div class="col-50">
+                                            <input type="text" id="city" placeholder="" class="donor-form-input" required/>
+                                        </div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40">
+                                            <label for="country" class="donor-form-label">State/Province <span class="red">*</span></label>
+                                        </div>
+                                        <div class="col-50">
+                                            <select class="donor-form-select" id="country" required>
+                                                <option value="select-default">Select</option>
+                                                <option value="Alabama">Alabama</option>
+                                                <option value="Alaska">Alaska</option>
+                                                <option value="Arizona">Arizona</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40">
+                                            <label for="zip" class="donor-form-label">Zip/Postal Code <span class="red">*</span></label>
+                                        </div>
+                                        <div class="col-50">
+                                            <input type="text" id="zip" placeholder="" class="donor-form-input" required/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        </div>
+                        <div class="spacer-3"></div>
+                        <h5 class="payment-info">Payment Information</h5>
                         <div class="grid-x grid-padding-x">
-                        <div class="large-6 medium-6 cell">
-                            <label>Choose Your Favorite</label>
-                            <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+                            <div class="large-8 cell">
+                                <div class="grid-x grid-padding-x payment-info-fields">
+                                    <div class="medium-12 row">
+                                        <div class="col-40"><label for="payment" class="donor-form-label">Payment Type <span class="red">*</span></label></div>
+                                        <div class="col-50">
+                                            <select class="donor-form-select" id="payment">
+                                                <option value="select-default">Select</option>
+                                                <option value="Alabama">Credit Card</option>
+                                            </select>
+                                            <div class="cc-img">
+                                                <img src="./assets/img/cc-visa.png" alt=""><img src="./assets/img/cc-mastercard.png" alt=""><img src="./assets/img/cc-amex.png" alt=""><img src="./assets/img/cc-discover.png" alt=""><img src="./assets/img/cc-paypal.png" alt=""><img src="./assets/img/cc-applepay.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40"><label for="cc-num" class="donor-form-label">Credit Card Number <span class="red">*</span></label></div>
+                                        <div class="col-50"><input type="number" id="cc-num" placeholder="" class="donor-form-input" required/></div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40"><label for="cvv" class="donor-form-label" style="margin-top: 0.5rem;">CVV Number <span class="red">*</span></label></div>
+                                        <div class="col-50"><div class="col-50"><input type="number" id="cvv" placeholder="" class="donor-form-input" required/></div><div class="col-20"><img src="./assets/img/qmark.png" alt="" title="Help text" class="cvv-help-icon show-for-medium"></div></div>
+                                    </div>
+                                    <div class="medium-12 row">
+                                        <div class="col-40"><label for="exp" class="donor-form-label" style="margin-top: 0.5rem;">Credit Card Expiration <span class="red">*</span></label></div>
+                                        <div class="col-50 expiration">
+                                            <div class="col-30 exp-month">
+                                                <select class="donor-form-select" id="exp-month" required>
+                                                    <option value="select-default">MM</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-10 show-for-medium"></div>
+                                            <div class="col-30 exp-year">
+                                                <select class="donor-form-select" id="exp-year" required>
+                                                    <option value="select-default">YYYY</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2024">2024</option>
+                                                    <option value="2025">2025</option>
+                                                    <option value="2026">2026</option>
+                                                    <option value="2027">2027</option>
+                                                    <option value="2028">2028</option>
+                                                    <option value="2029">2029</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="large-6 medium-6 cell">
-                            <label>Check these out</label>
-                            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-                        </div>
-                        </div>
+                        <div class="spacer-3"></div>
                         <div class="grid-x grid-padding-x">
-                        <div class="large-12 cell">
-                            <label>Textarea Label</label>
-                            <textarea placeholder="small-12.cell"></textarea>
-                        </div>
+                            <div class="large-12 text-center">
+                                <div class="submit-payment">
+                                    <button type="submit" buhref="" class="button submit-btn">Submit My Secure Purchase</button>
+                                </div>
+                                <div class="disclaimer-text padding-horizontal-3">
+                                    <p>Donations to PETA are in U.S. dollars and are tax-deductible to the fullest extent allowed by U.S. law. PETA’s tax ID number is 52-1218336. Please print or save this message for your personal records.</p>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
