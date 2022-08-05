@@ -1,313 +1,313 @@
-body{
-    box-sizing: border-box;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.col-05 {
-    width: 5%;
-    float: left;
-    margin-top: 0.5rem;
-}
-
-.col-10 {
-    width: 10%;
-    float: left;
-    margin-top: 0.8rem;
-}
-
-.col-20 {
-    width: 20%;
-    float: left;
-    margin-top: 0.5rem;
-}
-
-.col-30 {
-    width: 30%;
-    float: left;
-    margin-top: 0.5rem;
-}
-
-.col-40 {
-    width: 40%;
-    float: left;
-    margin-top: 0.8rem;
-}
-
-.col-50 {
-    width: 50%;
-    float: left;
-    margin-top: 0.8rem;
-}
-
-.red {
-    color: #FF0000 !important;
-}
-
-.padding-3 {
-    padding: 3rem !important;
-}
-
-.padding-top-1 {
-    padding-top: 1rem !important;
-}
-
-.padding-horizontal-3 {
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
-}
-
-.spacer-3 {
-    display: block;
-    margin: 3rem 0;
-}
-
 /* Header */
-
-.peta40-flex-header {
-    display: flex;
-    justify-content: space-evenly !important;
-    align-items: center !important;
-}
-
-.peta40-flex-header img {
-    height: 395px;
-}
-.peta40-flex-header .peta40logo {
-    height: 338px;
-    max-width: 100% !important;
-    
-}
-.peta40-flex-header .mobile-star-group {
-    height: auto;
-    width: 96px;
-    align-self: center;
-}
-
 /* Main Page */
-
-.home-content, .donate-content {
-    background-color: #fff !important;
-}
-
-.party-title {
-    position: relative;
-    font-family: "Great Vibes",Arial, Helvetica, sans-serif;
-    color: #D5AA00;
-    text-align: center;
-    font-size: 4rem;
-}
-
-.party-subheading {
-    position: relative;
-    font-family: "AllerBold",Arial, Helvetica, sans-serif;
-    font-size: 3.25rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 32;
-}
-
-.peta40-info {
-    padding-right: 2rem;
-    font-size: 1.2rem;
-}
-
-.peta40-info p {
-    margin-bottom: 1.5rem;
-}
-
-.peta40-btn-list {
-    margin-top: 0.5rem;
-    float: right;
-}
-
-.peta40-btn-list .button {
-    text-align: left !important;
-    height: 48px !important;
-    font-size: 1.1rem !important;
-    font-weight: 600;
-}
-
-.peta40-btn-list .button span {
-    float: right;
-}
-
-.more-info-banner{
-    background-color: #F2D049;
-    height: 100px;
-    font-family: 'AllerBoldItalic', Arial, Helvetica, sans-serif !important;
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 1rem 6rem;
-}
-
 /* Donation */
-
-.donate-content {
-    color: #000 !important;
-    font-size: 1.2rem;
-}
-
-.donation-title, .select-subtitle, .donor-contact-info, .payment-info {
-    font-family: "AllerBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #014289 !important;
-}
-
-.donate-form {
-    margin-top: 2rem;
-}
-
-.donate-form label {
-    font-size: 1.2rem !important;
-}
-
-.donate-form input[type=radio] {
-    transform: scale(1.3) !important;
-}
-
-.donate-form input[type=radio]:checked {
-    background-color: #2D9AE3 !important;
-}
-
-.donate-form .moreticketslabel {
-    margin-left: 0.5rem;
-}
-
-.donor-form-label {
-    display: inline-block !important;
-}
-
-.donor-form-input, .donor-form-select {
-    width: 100%;
-    resize: vertical;
-}
-
-.donor-contact-fields, .payment-info-fields {
-    margin-left: 15px !important;
-}
-
-.cc-img {
-    width: 100%;
-    display: inline-block;
-}
-
-.cc-img img {
-    width: 33px !important;
-    height: auto !important;
-    margin-right: 5px;
-}
-
-.cvv-help-icon {
-    display: inline;
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    margin-top: 12px;
-    margin-bottom: auto;
-    margin-left: 10px;
-}
-
-.disclaimer-text {
-    font-size: 13px !important;
-    
-}
-
-.submit-btn {
-    background-color: #014289 !important;
-    font-family: "AllerBold",Arial, Helvetica, sans-serif !important;
-    font-size: 1.1rem !important;
-    word-break: keep-all;
-}
-
-
 /* Footer */
-
+body {
+	box-sizing: border-box;
+}
+.row {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+.col-05 {
+	width: 5%;
+	float: left;
+	margin-top: 0.5rem;
+}
+.col-10 {
+	width: 10%;
+	float: left;
+	margin-top: 0.8rem;
+}
+.col-20 {
+	width: 20%;
+	float: left;
+	margin-top: 0.5rem;
+}
+.col-30 {
+	width: 30%;
+	float: left;
+	margin-top: 0.5rem;
+}
+.col-40 {
+	width: 40%;
+	float: left;
+	margin-top: 0.8rem;
+}
+.col-50 {
+	width: 50%;
+	float: left;
+	margin-top: 0.8rem;
+}
+.red {
+	color: #FF0000 !important;
+}
+.padding-3 {
+	padding: 3rem !important;
+}
+.padding-top-1 {
+	padding-top: 1rem !important;
+}
+.padding-horizontal-3 {
+	padding-left: 3rem !important;
+	padding-right: 3rem !important;
+}
+.spacer-3 {
+	display: block;
+	margin: 3rem 0;
+}
+.peta40-flex-header {
+	display: flex;
+	justify-content: space-evenly !important;
+	align-items: center !important;
+	img {
+		height: 395px;
+	}
+	.peta40logo {
+		height: 338px;
+		max-width: 100% !important;
+	}
+	.mobile-star-group {
+		height: auto;
+		width: 96px;
+		align-self: center;
+	}
+}
+.home-content {
+	background-color: #fff !important;
+}
+.donate-content {
+	background-color: #fff !important;
+	color: #000 !important;
+	font-size: 1.2rem;
+}
+.party-title {
+	position: relative;
+	font-family: "Great Vibes",Arial, Helvetica, sans-serif;
+	color: #D5AA00;
+	text-align: center;
+	font-size: 4rem;
+}
+.party-subheading {
+	position: relative;
+	font-family: "AllerBold",Arial, Helvetica, sans-serif;
+	font-size: 3.25rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 32;
+}
+.peta40-info {
+	padding-right: 2rem;
+	font-size: 1.2rem;
+	p {
+		margin-bottom: 1.5rem;
+	}
+}
+.peta40-btn-list {
+	margin-top: 0.5rem;
+	float: right;
+	.button {
+		text-align: left !important;
+		height: 48px !important;
+		font-size: 1.1rem !important;
+		font-weight: 600;
+		span {
+			float: right;
+		}
+	}
+}
+.more-info-banner {
+	background-color: #F2D049;
+	height: 100px;
+	font-family: 'AllerBoldItalic', Arial, Helvetica, sans-serif !important;
+	font-size: 1.3rem;
+	text-align: center;
+	padding: 1rem 6rem;
+}
+.donation-title {
+	font-family: "AllerBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #014289 !important;
+}
+.select-subtitle {
+	font-family: "AllerBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #014289 !important;
+}
+.donor-contact-info {
+	font-family: "AllerBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #014289 !important;
+}
+.payment-info {
+	font-family: "AllerBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #014289 !important;
+}
+.donate-form {
+	margin-top: 2rem;
+	label {
+		font-size: 1.2rem !important;
+	}
+	input[type=radio] {
+		transform: scale(1.3) !important;
+		&:checked {
+			background-color: #2D9AE3 !important;
+		}
+	}
+	.moreticketslabel {
+		margin-left: 0.5rem;
+	}
+}
+.donor-form-label {
+	display: inline-block !important;
+}
+.donor-form-input {
+	width: 100%;
+	resize: vertical;
+}
+.donor-form-select {
+	width: 100%;
+	resize: vertical;
+}
+.donor-contact-fields {
+	margin-left: 15px !important;
+}
+.payment-info-fields {
+	margin-left: 15px !important;
+}
+.cc-img {
+	width: 100%;
+	display: inline-block;
+	img {
+		width: 33px !important;
+		height: auto !important;
+		margin-right: 5px;
+	}
+}
+.cvv-help-icon {
+	display: inline;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	margin-top: 12px;
+	margin-bottom: auto;
+	margin-left: 10px;
+}
+.disclaimer-text {
+	font-size: 13px !important;
+}
+.submit-btn {
+	background-color: #014289 !important;
+	font-family: "AllerBold",Arial, Helvetica, sans-serif !important;
+	font-size: 1.1rem !important;
+	word-break: keep-all;
+}
 footer {
-    margin-top: 2rem;
-    font-size: 0.8rem;
+	margin-top: 2rem;
+	font-size: 0.8rem;
 }
-
 .sparkle-bunny-img {
-    display: flex;
-    justify-self: center;
-    margin: 0 auto !important;
-    width: 645px !important;
-    height: auto;
+	display: flex;
+	justify-self: center;
+	margin: 0 auto !important;
+	width: 645px !important;
+	height: auto;
 }
-
 .ftr-menu {
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-    margin-top: 1rem !important;
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+	margin-top: 1rem !important;
+	a {
+		color: #003477 !important;
+		&:hover {
+			color: #003477 !important;
+		}
+	}
 }
-
-.ftr-menu a, .ftr-menu a:hover {
-    color: #003477 !important;
+.peta-logo-ftr {
+	height: 22px !important;
+	width: auto;
+	margin-right: 10px;
+	margin-bottom: 5px;
 }
-
-.peta-logo-ftr, .fb-logo-ftr, .twitter-logo-ftr {
-    height: 22px !important;
-    width: auto;
-    margin-right: 10px;
-    margin-bottom: 5px;
+.fb-logo-ftr {
+	height: 22px !important;
+	width: auto;
+	margin-right: 10px;
+	margin-bottom: 5px;
 }
-
+.twitter-logo-ftr {
+	height: 22px !important;
+	width: auto;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
 .peta-ftr-contact {
-    padding-left: 2rem;
+	padding-left: 2rem;
 }
-
 @media screen and (min-width: 992px) {
-    .inner-content {
-        padding: 3rem !important;
-    }
-
-    .main {
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
-    }
+	.inner-content {
+		padding: 3rem !important;
+	}
+	.main {
+		padding-left: 3rem !important;
+		padding-right: 3rem !important;
+	}
 }
-
 @media screen and (max-width: 992px) {
-    .peta40logo {
-        height: 125px !important;
-    }
-
-    main {
-        padding: 2rem !important;
-    }
-
-    .party-subheading {
-        font-size: 2.4rem !important;
-        padding: 1rem;
-    }
-
-    .peta40-btn-list {
-        float: none;
-    }
-
-    .more-info-banner {
-        height: auto !important;
-        padding: 1rem 2rem !important;
-    }
+	.peta40logo {
+		height: 125px !important;
+	}
+	main {
+		padding: 2rem !important;
+	}
+	.party-subheading {
+		font-size: 2.4rem !important;
+		padding: 1rem;
+	}
+	.peta40-btn-list {
+		float: none;
+	}
+	.more-info-banner {
+		height: auto !important;
+		padding: 1rem 2rem !important;
+	}
 }
-
 @media screen and (max-width: 578px) {
-    .col-05, .col-10, .col-20, .col-30, .col-40, .col-50 {
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .exp-month, .exp-year {
-        width: 33% !important;
-        margin-right: 0.7rem !important;
-    }
-
-    .expiration {
-        display: inline-flex !important;
-        justify-content: left;
-    }
+	.col-05 {
+		width: 100%;
+		margin-top: 0;
+	}
+	.col-10 {
+		width: 100%;
+		margin-top: 0;
+	}
+	.col-20 {
+		width: 100%;
+		margin-top: 0;
+	}
+	.col-30 {
+		width: 100%;
+		margin-top: 0;
+	}
+	.col-40 {
+		width: 100%;
+		margin-top: 0;
+	}
+	.col-50 {
+		width: 100%;
+		margin-top: 0;
+	}
+	.exp-month {
+		width: 33% !important;
+		margin-right: 0.7rem !important;
+	}
+	.exp-year {
+		width: 33% !important;
+		margin-right: 0.7rem !important;
+	}
+	.expiration {
+		display: inline-flex !important;
+		justify-content: left;
+	}
 }
